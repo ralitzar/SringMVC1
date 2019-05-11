@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+
+<div class="error-panel" th:fragment="commonPages/403">
+
+<div th:replace="layout/top-navbar :: top-navbar"></div>
+
+	<h1 class="error-panel-code">
+		<i class="fa  fa-lock"></i>
+	</h1>
+	
+	<h2 class="error-panel-title">Access deny</h2>
+
+<a href="#" onclick="GoBackWithRefresh();return false;">BACK</a>
+
+<div class = "col col-sm-8" id=footer th:replace="layout/footer :: footer"></div>
+</div>
+</html>

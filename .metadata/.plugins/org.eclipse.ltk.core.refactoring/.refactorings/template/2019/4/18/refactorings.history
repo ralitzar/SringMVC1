@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;template/src/main/resources/templates/layout/navbar.html&apos; to &apos;top-navbar.html&apos;" description="Rename resource &apos;navbar.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/layout/navbar.html" name="top-navbar.html" stamp="1556526842842" updateReferences="true"/>
+</session>

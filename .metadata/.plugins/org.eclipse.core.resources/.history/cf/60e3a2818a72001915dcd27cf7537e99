@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="bg" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org">
+	
+<div class="wrapper" th:fragment="sidebar1">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+       <ul class="list-unstyled">
+       		<li  class="active" >
+                <a href="#"> <i class="fas fa-tachometer-alt"></i> <span>Dashboard </span></a>
+            </li>
+            
+            <li>
+                <a href="#registrationsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                 <i class="fas fa-folder"></i> Registrations 
+                </a>
+                <ul class="collapse list-unstyled components" id="registrationsSubmenu">
+                    <li>
+                        <a href="#"><i class="fas fa-wine-bottle"></i> Products</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i> Clients </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cart-arrow-down"></i> Sales </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-user-tie"></i> Users </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#searchSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                 <i class="fas fa-search"></i> Search 
+                </a>
+                <ul class="collapse list-unstyled components" id="searchSubmenu">
+                    <li>
+                        <a href="#"><i class="fas fa-wine-bottle"></i> Product</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i> Client </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-cart-arrow-down"></i> Sale </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-user-tie"></i> User </a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#reportsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+                	<i class="fas fa-archive"></i>  Reports </a>
+                <ul class="collapse list-unstyled components" id="reportsSubmenu">
+                    <li>
+                        <a href="#"><i class="fas fa-chart-area"></i> Charts </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-table"></i> Tables </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="far fa-file-alt"></i> Files </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-download"></i> Downloads </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>

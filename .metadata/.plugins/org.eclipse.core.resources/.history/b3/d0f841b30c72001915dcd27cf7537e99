@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+a {
+  color: var(--light);
+}
+
+a.active {
+	color: var(--gray);
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+}

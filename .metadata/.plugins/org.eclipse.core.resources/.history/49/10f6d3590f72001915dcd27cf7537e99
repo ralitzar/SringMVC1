@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bg" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org">
+	
+<div class="wrapper" th:fragment="sidebar">
+	
+<nav id="sidebar" class="navbar navbar-nav navbar-dark bg-dark nav-link">
+
+  <ul class="list-unstyled components">
+	<li class="active">
+        <a class="nav-link" th:href="@{Dashboard.html}">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+    </li>
+    <li class="nav-item active">
+    	<a th:href="@{#submenu}" data-toggle="collapse" aria-expanded="false" class=" dropdown-toggle nav-link">
+          <i class="fas fa-folder"></i><span> Registers  </span>
+        </a >
+        <ul class="collapse list-unstyled nav-link" id="submenu">
+	        	<li>
+	        		<a th:href="@{product-register.html}" class="nav-link p-2">
+	        		<span> Products </span></a>
+	        	</li>
+	        	<li>
+	        		<a th:href="@{client-register.html}" class="nav-link p-2" >
+	        		<span> Clients </span></a>
+	        	</li>
+	        	<li>
+	        		<a th:href="@{sales-register.html}" class="nav-link p-2">
+	        		<span> Sales </span></a>
+	        	</li>
+        </ul>
+	        <ul class="list-unstyled components">
+	        	<li class="nav-item">
+	        		<a class="nav-link" href="charts.html">
+	          		<i class="fas fa-chart-area"></i><span> Charts</span></a>
+	        	</li>
+	        	<li class="nav-item">
+	        		<a class="nav-link" href="tables.html">
+	        		<i class="fas fa-table"></i><span> Tables</span></a>
+	      		</li>
+	        </ul>
+    	</li>
+	</ul>
+</nav>
+
+</div>
+

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+
+<div class="error-panel" th:fragment="commonPages/403">
+	<h1 class="error-panel-code">
+		<i class="fa  fa-lock"></i>
+	</h1>
+
+<a href="#" onclick="GoBackWithRefresh();return false;">BACK</a>`
+</div>
+</html>

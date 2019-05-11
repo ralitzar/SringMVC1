@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no" />
+
+	<title>Template</title>
+	
+	<!-- vendors css -->
+	<link rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{https://use.fontawesome.com/releases/v5.7.2/css/all.css}" />
+
+	<!-- template css -->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div class="error-panel" th:fragment="commonPages/403">
+
+<div th:replace="layout/top-navbar :: top-navbar"></div>
+
+	<h1 class="error-panel-code">
+		<i class="fas fa-user-lock"></i>
+	</h1>
+	
+	<h2 class="error-panel-title">Access deny</h2>
+	<div class="error-panel-description">
+		<p>Sorry, you are not authorized to access the page you requested.</p>
+		<p>If you think this is a mistake, please contact us.</p>
+
+	<a href="#" onclick="GoBackWithRefresh();return false;">BACK</a>
+	<br/><br/>
+
+	<div class = "col col-sm-8" id=footer th:replace="layout/footer :: footer"></div>
+	</div>
+</div>
+<script type="text/javascript" th:src="@{/js/template.js}"></script>
+</body>
+</html>

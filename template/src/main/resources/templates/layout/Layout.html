@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no" />
+
+	<title>Template</title>
+	
+	<!-- vendors css -->
+	<link rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{https://use.fontawesome.com/releases/v5.7.2/css/all.css}" />
+
+	<!-- template css -->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+
+<body>
+	<div th:replace="layout/top-navbar :: top-navbar"></div>
+    <div class="collapse" th:replace="layout/sidebar :: sidebar"></div>
+    <!-- page content -->
+    <div class="form-group row ">
+    <div class = "col col-sm-4"></div>
+	<div class = "col col-sm-8" id=footer th:replace="layout/footer :: footer"></div>
+	</div>
+
+	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/template.js}"></script>
+
+</body>
+</html>

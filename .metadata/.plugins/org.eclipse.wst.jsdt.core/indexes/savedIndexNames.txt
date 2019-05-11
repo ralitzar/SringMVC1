@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+C:\Users\Ralit\Documents\template\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3971158968.index
+1236380466.index
+2449930985.index
+4190451930.index
+2922177859.index
